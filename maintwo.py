@@ -1,4 +1,5 @@
-import os, cv2, requests, time, gofile2, datetime
+import os, cv2, requests, time, datetime
+from gofile2 import Gofile
 
 class WebcamRecorder():
     def __init__(self):
