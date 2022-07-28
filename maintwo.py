@@ -1,5 +1,8 @@
 import os, cv2, requests, time, datetime
 from gofile2 import Gofile
+import sys
+
+sys.path.append('/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages')
 
 class WebcamRecorder():
     def __init__(self):
